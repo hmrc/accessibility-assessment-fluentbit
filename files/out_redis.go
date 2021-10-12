@@ -156,7 +156,7 @@ func createJSON(timestamp time.Time, tag string, record map[interface{}]interfac
 	m := make(map[string]interface{})
 	// convert timestamp to RFC3339Nano which is logstash format
 	m["@timestamp"] = timestamp.UTC().Format(time.RFC3339Nano)
-	m["@tag"] = tag
+	m["log_driver_tag"] = tag
 	for k, v := range record {
 		switch t := v.(type) {
 		case []byte:
