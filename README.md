@@ -1,6 +1,8 @@
 
 # accessibility-assessment-fluentbit
 
+> This image has been superceded by [build-fluentbit](https://github.com/hmrc/build-fluentbit) and is no longer in use.
+
 Builds a fluentbit container image to forward logs to redis (and ultimately to Elasticsearch) from other containers in the ECS cluster. 
 The files for building the plugin are based on the work in https://github.com/majst01/aws-ecs-fluentbit
 
